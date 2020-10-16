@@ -1,5 +1,6 @@
 #pragma once
 #include <map>
+#include <string>
 
 namespace g
 {
@@ -24,7 +25,8 @@ namespace g
 
     class Game : public Renderer, public Loop
     {
-    
+    public:
+        virtual ~Game() {};
     };
 
     typedef Game* (*BuildGameMethod)(void); 
